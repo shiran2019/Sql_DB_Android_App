@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table student_table (id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,surname TEXT, marks INTEGER)");
     }
-
+//test
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS student_table");
